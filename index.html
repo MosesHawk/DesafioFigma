@@ -5,15 +5,211 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;500&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reto Pazioli</title>
+
+
 </head>
 
 <body>
-    <header><img src="images/icon-pazioli.png" alt=""><a href=""></img>
-            <div><nav><a href="https://www.google.com/"><img src="images/cart-pazioli.png" alt="icon-shoping"></a></nav></div>
+    <header>
+        <nav class="nav nav__header-flex">
+            <a href="#"><img class="img img__icon-pazioli" src="./images/icon-pazioli.png" alt="icon-pazioli"></a>
+            <a href="#"><img class="img img__icon-shoping" src="./images/icon-shoping.png" alt="icon-shoping"></a>
+        </nav>
     </header>
-
+    <main>
+        <section>
+            <div class="first-section">
+                <p>El arte de tocar piano</p>
+                <h1>Instituto Pazioli</h1>
+            </div>
+            <div class="top__buttons--flex">
+                <button class="see-courses">Ver cursos</button>
+                <button class="sell-piano">Adquirir piano</button>
+            </div>
+            <div class="piano-black">
+                <img src="./images/black-piano.png" alt="black-piano">
+            </div>
+        </section>
+        <section class="new-model">
+            <div>
+                <div class="second-section">
+                    <video
+                        src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/68f4ba22-f289-45d4-b525-c7a3d5795444/playing-video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230121%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230121T012331Z&X-Amz-Expires=86400&X-Amz-Signature=f2dce1f6a3f3913f71dc6adab3722d27c34bac822401ab6b3ad2348d55d2a97d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22playing-video.mp4%22&x-id=GetObject"
+                        autoplay muted loop></video>
+                    <h2>Conoce nuestro nuevo modelo en clase</h2>
+                    <img src="./images/brown-piano.png" alt="black-piano">
+                </div>
+            </div>
+            <div class="description-second-section">
+                <div>
+                    <h3>Nuevo Ebony F228</h3>
+                    <div class="value">
+                        <p>Valoración:</p>
+                        <img src="./images/stars.png" alt="stars">
+                    </div>
+                </div>
+                <div>
+                    <h3>Desde:$110,00.00</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet donec purus egestas mattis non
+                        orci. Tellus id viverra id egestas. Quis enim, mauris velit feugiat vestibulum adipiscing
+                        elementum gravida. Egestas felis pellentesque vitae sed.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="no-bolet">Nuevo</li>
+                        <li>2021</li>
+                        <li>Acús...</li>
+                        <li>M.Cedro</li>
+                    </ul>
+                </div>
+                <div class="btn-second-section--flex">
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h2>¿Qué tipo de piano estás buscando?</h2>
+                </div>
+                <article>
+                    <div>
+                        <img src="./images/white-piano.png" alt="white-piano">
+                    </div>
+                    <div>
+                        <h3>The Butterfly</h3>
+                        <ul>
+                            <li>Nuevo</li>
+                            <li>2021</li>
+                            <li>Acús</li>
+                            <li>M.Cedro</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Desde: $195k mn</p>
+                        <i></i>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img src="./images/Golden-piano.png" alt="Golden-piano">
+                    </div>
+                    <div>
+                        <h3>Golden Leaf</h3>
+                        <ul>
+                            <li>Nuevo</li>
+                            <li>2021</li>
+                            <li>Acús</li>
+                            <li>M.Cedro</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Desde: $305k mn</p>
+                        <i></i>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img src="./images/light-brown-piano.png" alt="light-brown-piano">
+                    </div>
+                    <div>
+                        <h3>Walnut Strauss</h3>
+                        <ul>
+                            <li>Nuevo</li>
+                            <li>2021</li>
+                            <li>Acús</li>
+                            <li>M.Cedro</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Desde: $125k mn</p>
+                        <i></i>
+                    </div>
+                </article>
+                <button>Ver más</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h2>Contáctanos</h2>
+                    <p>¿Quieres educarte formalmente en este instrumento?Toca más rápdo, logra mayor fluidez en las
+                        composiciones complejas.Contactános para conocer tus objetivos.</p>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="">Nombre</label>
+                        <input type="text">
+                        <label for="">Teléfono</label>
+                        <input type="phone">
+                        <label for="">Email</label>
+                        <input type="email">
+                        <label for="">Cuéntanos más</label>
+                        <textarea></textarea>
+                    </form>
+                </div>
+                <button>Enviar</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h3></h3>
+                </div>
+                <div>
+                    <img src="./images/Petrof.png" alt="imagen-Petrof">
+                    <h3>PETROF</h3>
+                </div>
+                <div>
+                    <img src="./images/Bookpa.png" alt="imagen-bookpa">
+                    <h3>BOOKPA</h3>
+                </div>
+                <div>
+                    <img src="./images/Piafmar.png" alt="imagen-piafmar">
+                    <h3>PIAFMAR</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="./images/logo-pazioli.png" alt="logo-pazioli">
+        </div>
+        <div>
+            <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <nav>
+            <a href="">Nosotros</a>
+            <a href="">Home</a>
+            <a href="">Nuevo</a>
+            <a href="">Planos</a>
+            <a href="">Conoce nuestros cursos</a>
+        </nav>
+        <div>
+            <a href="">Contáctanos</a>
+            <p>México Tonalá 10, Roma Nte, Cuautémoc, 03800 ciudad de México, CDMX.</p>
+        </div>
+        <div>
+            <p>&#xA9;Pazioli 2021.todos los derechos reservados</p>
+        </div>
+        <div>
+            <p>Powered with
+            <p>❤</p> by <b>DevKoore</b></p>
+        </div>
+        </div>
+    </footer>
 </body>
 
 </html>
