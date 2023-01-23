@@ -73,11 +73,13 @@ h1 {
 }
 
 .new-model {
-  background: linear-gradient(180deg,
-      #ffffff 0%,
-      rgba(0, 0, 0, 0.75) 37.19%,
-      rgba(0, 0, 0, 0.75) 76.04%,
-      #ffffff 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(0, 0, 0, 0.75) 37.19%,
+    rgba(0, 0, 0, 0.75) 76.04%,
+    #ffffff 100%
+  );
 }
 
 .second-section {
@@ -97,6 +99,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.1rem;
     display: flex;
+    margin-right: 15px;
   }
 
   .second-section,
@@ -117,7 +120,7 @@ h1 {
   letter-spacing: 2px;
   margin-bottom: 2px;
 
-  +p {
+  + p {
     color: $white;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -198,7 +201,12 @@ h1 {
 }
 
 .cards_section {
-  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 0) 0%,
+    #f5f5f5 51.56%,
+    rgba(245, 245, 245, 0) 100%
+  );
 
   .cards_section,
   h2 {
@@ -210,28 +218,24 @@ h1 {
     padding-right: 30px;
     letter-spacing: 0.05rem;
     margin-bottom: 40px;
-
   }
 }
-
-.whitecard {
+.whitecard-butterfly {
   background-color: $FWhite;
   width: 250px;
   height: 350px;
   margin-left: 32px;
   margin-right: 32px;
   border-radius: 8px;
-  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: $Sombreado;
   margin-bottom: 30px;
-
 
   .imagewhitecard {
     padding-top: 1.5rem;
     margin-left: 15px;
     margin-right: 15px;
-    border-bottom: 1px dashed #DBDBDB;
+    border-bottom: 1px dashed #dbdbdb;
     padding-bottom: 15px;
-
   }
 
   .whitecardname {
@@ -239,7 +243,6 @@ h1 {
     font-family: $Abril;
     letter-spacing: 0.05rem;
     font-size: 16px;
-
   }
 
   .whitelist {
@@ -264,11 +267,11 @@ h1 {
     justify-content: space-between;
     gap: 0px;
     height: 10px;
-    overflow:unset;
+    overflow: unset;
     height: 50px;
     margin-left: 20px;
-    
-    p{
+
+    p {
       border: solid 1px;
       border-radius: $radius;
       margin: 0;
@@ -281,9 +284,8 @@ h1 {
       font-family: $Raleway;
       font-weight: 600;
       font-size: 16px;
-      
     }
-    img{
+    img {
       overflow: hidden;
       height: 125px;
       margin-top: -45px;
@@ -292,3 +294,374 @@ h1 {
     }
   }
 }
+.whitecard-golden {
+  background-color: $FWhite;
+  width: 250px;
+  height: 350px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  box-shadow: $Sombreado;
+  margin-bottom: 30px;
+  .imagen-white-card-gold {
+    padding-top: 1.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px dashed #dbdbdb;
+    padding-bottom: 15px;
+  }
+  div h3 {
+    margin-left: 15px;
+    font-family: $Abril;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+
+    + .gold-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 12px;
+      font-family: $Raleway;
+      letter-spacing: 0.05rem;
+      margin-bottom: 20px;
+      li:first-child {
+        list-style: none;
+      }
+    }
+  }
+  .gold-cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    height: 10px;
+    overflow: unset;
+    height: 50px;
+    margin-left: 20px;
+    p {
+      border: solid 1px;
+      border-radius: $radius;
+      margin: 0;
+      width: 150px;
+      height: 20px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: $Raleway;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    img {
+      overflow: hidden;
+      height: 125px;
+      margin-top: -45px;
+      margin-left: -40px;
+      margin-right: -30px;
+      padding: 0;
+    }
+  }
+}
+.Whitecard-brown {
+  background-color: $FWhite;
+  width: 250px;
+  height: 350px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 8px;
+  box-shadow: $Sombreado;
+  margin-bottom: 30px;
+  .imagen-white-card-brown {
+    padding-top: 1.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px dashed #dbdbdb;
+    padding-bottom: 5px;
+  }
+  div h3 {
+    margin-left: 15px;
+    font-family: $Abril;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    + .brown-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 12px;
+      font-family: $Raleway;
+      letter-spacing: 0.05rem;
+      margin-bottom: 20px;
+      li:first-child {
+        list-style: none;
+      }
+    }
+  }
+  .brown-cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    overflow: unset;
+    height: 50px;
+    margin-left: 20px;
+    p {
+      border: solid 1px;
+      border-radius: $radius;
+      margin: 0;
+      width: 150px;
+      height: 20px;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: $Raleway;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    img {
+      overflow: hidden;
+      height: 125px;
+      margin-top: -45px;
+      margin-left: -40px;
+      margin-right: -30px;
+    }
+  }
+}
+.btn-view--flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  button {
+    width: 129px;
+    height: 32px;
+    border-radius: $radius;
+    background-color: $FBlack;
+    color: $white;
+    font-family: $Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
+.section-form-gradient {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.35) 100%
+  );
+  img {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+div h2 {
+  text-align: center;
+  font-family: $Abril;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.05rem;
+  margin-bottom: 25px;
+  position: relative;
+  + p {
+    text-align: center;
+    font-family: $Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+}
+form label {
+  width: 290px;
+  height: 36px;
+  font-family: $Raleway;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  margin: 0 15px;
+  position: relative;
+  + input {
+    width: 290px;
+    height: 36px;
+    border: 1px solid white;
+    background-color: $back;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 30px 15px;
+    position: relative;
+  }
+  + textarea {
+    width: 290px;
+    height: 148px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: $back;
+    margin: 25px 15px;
+    position: relative;
+  }
+}
+.section-form-gradient button {
+  width: 290px;
+  height: 32px;
+  border-radius: $radius;
+  background-color: $FBlack;
+  font-family: $Raleway;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: $white;
+  margin: 0 15px;
+  margin-bottom: 70px;
+}
+.section-form-gradient--partners {
+  background: linear-gradient(
+    177.96deg,
+    #6f6f6f 1.72%,
+    rgba(255, 255, 255, 0.43) 98.63%
+  );
+  div h3 {
+    margin-top: 0;
+    font-family: $Abril;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  .div {
+    width: 260px;
+    height: 85px;
+    background-color: $FBlack;
+    border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+    color: $white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    padding: 7px;
+    margin: auto;
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 0 30px;
+      line-height: 38px;
+    }
+  }
+  .div__Bookpa {
+    border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
+    flex-direction: row-reverse;
+    justify-content: first baseline;
+    margin: 25px 22px;
+  }
+}
+.footer-gradient {
+  background: linear-gradient(
+    177.96deg,
+    rgba(255, 255, 255, 0.43) 1.72%,
+    #6f6f6f 107.44%
+  );
+  .div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      margin-top: 100px;
+      margin-bottom: 45px;
+    }
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 85px;
+    margin-right: 85px;
+    a {
+      border: $Bborder;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      block-size: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      margin:auto;
+    }
+  }
+  .footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap:10px;
+    margin-top: 55px;
+    font-family:$poppins;
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
+    letter-spacing: 0.05rem;
+    li a:visited{
+      text-decoration: none;
+      color:$black;
+    }
+    li a{
+      text-decoration: none;
+    }
+    li:first-of-type, li:last-of-type{
+      padding-top: 10px;
+      font-family:$Abril;
+      font-size: 14px;
+      padding-bottom:10px ;
+
+    }
+
+  }
+  .text-footer{
+    text-align: center;
+    font-family: $Raleway;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    &.address{
+      margin-left:50px ;
+      margin-right: 50px;
+    }
+
+  }
+  .brand{
+    font-size: 14px;
+  }
+  .pazioli{
+    margin-top: 30px;
+  }
+  .koders{
+    margin-bottom: 30px;
+    span{
+      color: transparent;
+      text-shadow: 0 0 0 red;
+    }
+  }
+
+  }
+
+
+
+
