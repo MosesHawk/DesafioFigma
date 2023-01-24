@@ -1,7 +1,6 @@
 @import "./_var.scss";
 
 body {
-  width: 320px;
   margin: 0;
 }
 
@@ -13,6 +12,9 @@ body {
   .img__icon-pazioli {
     margin-top: 32px;
     margin-left: 15.55px;
+  }
+  ul{
+    display: none;
   }
 }
 
